@@ -1,0 +1,14 @@
+---
+# tasks file for mysql
+- name: Install MySql
+  package: >
+    name=mysql-server
+    state=installed
+  when: ansible_os_family == "Debian"
+
+- name: Install MySql
+  package: >
+    name=mysql
+    state=installed
+  when: ansible_os_family == ""
+

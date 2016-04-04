@@ -1,0 +1,22 @@
+galaxy_info:
+  author: Charles Gardner
+  description: A local MySql installation.
+  company: OpsRoll
+  license: GPLv2
+
+  min_ansible_version: 1.2
+
+  platforms:
+  - name: GenericUNIX
+    versions:
+    - all
+  - name: GenericLinux
+    versions:
+    - all
+
+  galaxy_tags:
+    - development
+    - databases
+
+dependencies:
+  - opsroll.ansible
